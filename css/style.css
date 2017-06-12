@@ -160,6 +160,7 @@ audio {background-color: #240f1e;}
 .fa-spotify {color: rgb(125,194,17);}
 .fa-google-plus-square {color:rgb(204,51,51); font-size:30px;}
 .fa-instagram {color: rgb(131,84,60);}
+.fa-book {color: pink;}
 
 #socialmedia .icons {display: flex; flex-direction: row; align-items: center; justify-content: center;flex-wrap:wrap; }
 #socialmedia .icons  div {margin:3px;}
