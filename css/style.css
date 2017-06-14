@@ -21,7 +21,7 @@ a, a:hover
   }
 #head h1{
 	float:left;
-	padding-left: calc(100px + 2.5vw);
+	padding-left: calc(90px + 2.5vw);
 	padding-top: 30px;
   	font-family: "Dancing Script";
   	font-size: calc(1rem + 2vw);
