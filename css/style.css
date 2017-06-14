@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 
-body {background: #240f1e url(../images/background_index.png) 280px 180px no-repeat; color:rgb(248,233,210); 
-	font-family: "arial",sans-serif; font-size: 16px; }
+body {background: #fff url(../images/background_index.png) 310px 220px no-repeat; color:#240f1e; 
+	font-family: "arial",sans-serif; }
 a, a:hover
- {color:rgb(248,233,210); font-weight: bold;}
+ {color:#240f1e; font-weight: bold;}
 /************************************ Ajustement on header image ************************************/
-#head>header:after{clear:both;}
+
+#head header:after{clear:both;}
 #head {
     text-align: right;
     height: 120px;
     line-height: 120px;
-    background-image: url(../images/header1.jpg);
-    background-repeat: no-repeat;
+    color:#fff;
+    background-color: #240f1e;
 }
+#head .container{    
+    background: url(../images/header1.jpg);
+    background-repeat: no-repeat;
+    height:120px;
+  }
 #head h1{
 	float:left;
 	padding-left: calc(100px + 2.5vw);
@@ -26,29 +32,37 @@ a, a:hover
 	padding-top: 30px;
 }
 /************************************ Ajustement on navigation bar ************************************/
+#menu,
+#menu .container,
+#menu .container nav
+ {margin-bottom: 0;
+  background-color:#240f1e;}
 .navbar-default { background-color: transparent; border:0;}
 /*button*/
-.navbar-default .navbar-toggle {border-color: rgb(248,233,210) !important;}
+.navbar-default .navbar-toggle {border-color: #fff !important;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: rgb(248,233,210) !important;
+    background-color: #fff !important;
 }
 .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
     background-color: #240f1e !important;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: rgb(248,233,210);
+    background-color: #fff;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: rgb(248,233,210);
+    border-color: #fff;
+}
+.navbar-default .navbar-collapse {
+  background-color: #240f1e;
 }
 nav ul li{
   margin-right: 10px;
   text-align: center;
   width: calc(90px + 1vw);
   font-weight: bold;
-  margin-bottom: 5px;
+/*  margin-bottom: 5px;*/
 }
-nav li a {color:rgb(248,233,210) !important;}
+nav li a {color:#fff !important;}
 nav li a:hover, 
 nav li.active>a {  
 	background-color: rgb(255,255,255) !important;
@@ -56,7 +70,9 @@ nav li.active>a {
 	border: 1px white solid;
 }
 
-main, aside {margin-top: -15px;}
+
+
+main, aside {margin-top: 15px;}
 
 /************************************ Ajustement on section Quote ************************************/
 #quote i {font-size: .8rem; color: rgb(255,128,128); }
@@ -67,7 +83,7 @@ main, aside {margin-top: -15px;}
 }
 #quote .quote-badge{
     background-color:#222;
-    color: rgb(248,233,210);   
+    color: #240f1e;   
 }
 #quote .quote-box{
     overflow: hidden;
@@ -75,23 +91,22 @@ main, aside {margin-top: -15px;}
     padding-top: -100px;
     border-radius: 17px;
     margin-top: 15px;
-    border:rgb(248,233,210) solid 1px;
-    color:rgb(248,233,210);  
+/*    border:#240f1e solid 1px;*/
+    color:#240f1e;  
 }
-#quote hr {background-color: rgb(248,233,210); border: 0 none; color: rgb(248,233,210); height: 1px;}
+#quote hr {background-color:#240f1e; border: 0 none; color:#240f1e; height: 1px;}
 #quote .quotation-mark{    
     margin-top: -10px;
     font-weight: bold;
     font-size:100px;
-    color:rgb(248,233,210);
+    color: #240f1e;
     font-family: "Times New Roman", Georgia, Serif;   
 }
 
 #quote .quote-text{    
-    font-size: 1.2em;
     margin-top: -65px;
 }
-#quote h4 {line-height: 30px;}
+#quote h5 {line-height: 30px; background-color:#EDC330; box-shadow: 10px 0 0px 0px #EDC330, -10px 0 0px 0px #EDC330;}
 #quote .author {font-size: 16px; }
 #quote .feather {width: 30px; height: auto; fill:rgba(80,200,100,1);}
 #quote .blog-post-actions p {display: -webkit-box;display: -ms-flexbox;display: flex; 
@@ -102,13 +117,16 @@ main, aside {margin-top: -15px;}
 #quote span {display: inline-block; position: absolute; right:0;}
 
 
+/************************************ Ajustement on section lyric recommended ************************************/
 #pickoutlyric h4 span,
 #album h4 span
-{display: inline-block; border: rgb(248,233,210) solid 1px; border-radius: 8px 8px 0 0; border-bottom: 0;width: 140px; 
-height: 30px; line-height: 30px; vertical-align: baseline;}
+{display: inline-block; border: #240f1e solid 1px; 
+  border-radius: 8px 8px 0 0; border-bottom: 0;
+  width: 140px; 
+height: 30px; line-height: 30px; font-weight: bold;}
 #pickoutlyric h4,
 #album h4
- {border-bottom: 1px dotted rgb(248,233,210);}
+ {border-bottom: 1px dotted #240f1e;}
 
 
 #pickoutlyric .fa-star {color:red;}
@@ -126,6 +144,7 @@ height: 30px; line-height: 30px; vertical-align: baseline;}
 #album .albumicon {width: 20px; height: auto; fill: rgb(255,128,0);}
 #album  .thumbnail {display: inline-block;}
 #album .caption {padding-top:9px; padding-bottom: 0;}
+#album article .row div {text-align: center;}
 
 /*Aside panel*/ 
 #play,
@@ -133,24 +152,47 @@ height: 30px; line-height: 30px; vertical-align: baseline;}
 #recommendation,
 #socialmedia
 {
-	border:1px solid rgb(248,233,210); border-radius: 10px 10px 0 0; 
 	display: -webkit-box; 
 	display: -ms-flexbox; 
-	display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-bottom: 10px;
+	display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; 
+  flex-direction: column;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left; 
+  -webkit-box-pack: left;
+  -ms-flex-pack: left; 
+  justify-content: flex-start; padding-bottom: 10px;
 	margin-bottom: 20px;
 }
+#play h4 span,
+#fav_lyrics h4 span,
+#recommendation h4 span,
+#socialmedia h4 span
+{
+  height: 30px; line-height: 30px;
+  font-family: "Dancing Script"; 
+border:1px solid #240f1e; border-radius: 10px 10px 0 0; 
+font-weight: bold;text-align: center; padding: 5px; padding: 7px 10px 5px;border-bottom: none;}
+#play h4 i,
+#fav_lyrics h4 i,
+#recommendation h4 i,
+#socialmedia h4 i
+{color:#fcb203;}
+
 #play h4,
 #fav_lyrics h4,
 #recommendation h4,
 #socialmedia h4
-{font-family: "Dancing Script"; padding-bottom: 10px;}
-#play span:last-child {color:#fcb203; font-weight: bold;}
-audio {background-color: #240f1e;}
+{width: 100%; border-bottom: 1px dotted #240f1e;}
 
+audio {background-color: #240f1e; width: 100%}
+
+#recommendation,
+#socialmedia
+ {display: flex; flex-direction: column; align-items: center;}
 #recommendation img {width: 250px; height: auto; max-width: 100%;}
-#recommendation p {width:100%; position: relative; padding: 10px;}
-#recommendation p a {position: absolute; right:5px;}
-#recommendation span {color: rgb(80,200,100);}
+#recommendation p {width:100%; padding: 10px;}
+#recommendation i {color: rgb(80,200,100);}
 
 #socialmedia .fa {font-size: 48px !important; }
 .fa-facebook-official {color: rgb(59,87,157);}
@@ -160,17 +202,17 @@ audio {background-color: #240f1e;}
 .fa-spotify {color: rgb(125,194,17);}
 .fa-google-plus-square {color:rgb(204,51,51); font-size:30px;}
 .fa-instagram {color: rgb(131,84,60);}
-.fa-book {color: pink;}
+.fa-book {color: rgb(255,128,192) !important; font-size:9px;}
 
 #socialmedia .icons {display: flex; flex-direction: row; align-items: center; justify-content: center;flex-wrap:wrap; }
 #socialmedia .icons  div {margin:3px;}
-#socialmedia p {height: 40px; background-color: }
-#socialmedia p a {color: rgb(80,140,230);}
-#socialmedia h4 span {color: rgb(80,140,230);}
+#socialmedia p {height: 40px; font-size: 1.2em; }
+#socialmedia p a {color: rgb(80,140,230); font-size: 1.3em;}
+#socialmedia h4 i {color: rgb(80,140,230);}
 
 #fav_lyrics li {list-style: none;}
-#fav_lyrics i::after {content:"\00a0\00a0";}
-#fav_lyrics .fa-heart {color:rgb(255,128,192); font-size:12px;}
-#fav_lyrics li a {color:  rgb(248,233,210); }
+#fav_lyrics i::after {content:"\00a0\00a0\00a0";}
+#fav_lyrics .fa-heart {color:pink; font-size:9px;}
 
 
+#pagefooter {text-align: center; background-color:#240f1e; color: #fff; padding: 30px; color: rgb(248,233,210);}

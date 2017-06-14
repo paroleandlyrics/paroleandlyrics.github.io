@@ -14,11 +14,8 @@
 </head>
 <body>
 
+<div class="container-fluid" id="menu">
 <div class="container">
-	<header id="head"> <!-- header image -->
-		<h1>America's piano man - Billy Joel</h1>
-		<h2 class="hidden-xs"><em>比利</em>&nbsp;&middot;&nbsp;<em>乔尔</em></h2>
-	</header>  <!-- /header image -->
 	<!-- header menu -->
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
@@ -44,12 +41,23 @@
 	</nav>
 	<!-- /header menu -->
 </div>
+</div>
 
-<section class="container"> <!-- Main body -->
+
+<div class="container-fluid" id="head">
+<div class="container">
+	<header> <!-- header image -->
+		<h1>America's piano man - Billy Joel</h1>
+		<h2 class="hidden-xs"><em>比利</em>&nbsp;&middot;&nbsp;<em>乔尔</em></h2>
+	</header>  <!-- /header image -->
+</div>
+</div>
+
+<section class="container" id="middlepart"> <!-- Main body -->
 	<div class="row">
 	<main class="col-xs-10 col-xs-push-1 col-md-8 col-md-push-0">
 		<section id="quote"> <!-- Quote -->
-			<h4>一日为师，终身为师。 这个网站是感恩老师 François Audit 的善言善行而建设的。 我希望中国听到世界的声音，也希望世界听到中国的声音。 激励我做这件事情的有美国的 Billy Joel、Lori McKenna，爱尔兰的 Brendan Graham、 Enya，加拿大的 High Valley， 瑞典的 ABBA，中国的 Beyond、 许巍 ... 很多很多。</h4>
+			<h5>一日为师，终身为师。 这个网站是感恩老师 François Audet 的善言善行，受惠于老师 François Caron 的指导而建设的。 我希望中国听到世界的声音，也希望世界听到中国的声音。 激励我做这件事情的有中国的 Beyond、 许巍，美国的 Billy Joel、Lori McKenna，爱尔兰的 Brendan Graham、 Enya，加拿大的 High Valley，瑞典的 ABBA ... 很多很多。 我多么希望世界能听懂 Beyond  的光辉岁月。 多少次他的歌词在我心中响起 “多少次，迎着冷眼与嘲笑，从未放弃心中的理想...风雨里追赶，雾里分不清影踪 ... 背弃了理想，谁人都可以，哪会怕一天只你和我 ...”</h5>
 		    <blockquote class="quote-box">
 		    	<p class="quotation-mark">
 		        “
@@ -65,9 +73,9 @@
 	        		</p>
       			</div>
     		</blockquote>
-		</section> <!-- /Quote -->
+		</section> <!-- /Quote -->	
 
-		<section id="pickoutlyric">
+		<section id="pickoutlyric"><!-- Recommended lyric -->
 			<h4>
 				<span class="text-center"><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;推&nbsp;荐&nbsp;歌&nbsp;词</span>			
 			</h4>
@@ -98,18 +106,17 @@
 				<span>If I could get out of this place"</span><span></span>
 				</p>
 				<footer class="container-fluid"><a href="#" >详&nbsp;细&nbsp;...</a></footer>
-			</article>
-			
-		</section>
+			</article>			
+		</section><!-- /Recommended lyric -->	
 
-		<section id="album">
+		<section id="album"><!-- album -->
 			<h4>
 				<span class="text-center"><img src="svg/music-album.svg" class="inject-me albumicon" alt="album icon"/>&nbsp;&nbsp;专&nbsp;辑&nbsp;列&nbsp;表</span>
 			</h4>
 			<article>
 				<div class="row">
 
-				  <div class="col-xs-6 col-md-3">
+				  <div class="col-xs-10 col-xs-push-1 col-md-3  col-md-push-0">
 				    <a href="#"  class="thumbnail">
 				      <img src="./images/album1.jpg" alt="...">
 				      <div class="caption text-center">
@@ -119,7 +126,7 @@
 				    </a>
 				  </div>
 
-				<div class="col-xs-6 col-md-3">
+				<div class="col-xs-10 col-xs-push-1 col-md-3  col-md-push-0">
 				    <a href="#"  class="thumbnail">
 				      <img src="./images/album2.jpg" alt="...">
 				      <div class="caption text-center">
@@ -130,7 +137,7 @@
 				</div>
 				
 
-				<div class="col-xs-6 col-md-3">
+				<div class="col-xs-10 col-xs-push-1 col-md-3  col-md-push-0">
 				    <a href="#"  class="thumbnail">
 				      <img src="./images/album3.jpg" alt="...">
 				      <div class="caption text-center">
@@ -141,7 +148,7 @@
 				</div>
 						
 
-				<div class="col-xs-6 col-md-3">
+				<div class="col-xs-10 col-xs-push-1 col-md-3  col-md-push-0">
 				    <a href="#"  class="thumbnail">
 				      <img src="./images/album4.jpg" alt="...">
 				      <div class="caption text-center">
@@ -155,14 +162,11 @@
 
 				<footer class="container-fluid"><a href="https://genius.com/artists/Billy-joel" target="_blank">更&nbsp;多&nbsp;...</a></footer>
 			</article>
-
-
-		</section>
+		</section><!-- /Album -->
 	</main>
-
-	<aside  class="col-xs-10 col-xs-push-1  col-md-4  col-md-push-0 ">
-		<section id="play">
-			<h4><span>&#9835;</span>&nbsp;Piano man</h4>
+	<aside class="col-xs-10 col-xs-push-1  col-md-4  col-md-push-0 ">
+		<section id="play">	
+			<h4><span><i>&#9835;</i>&nbsp;&nbsp;Piano man</span></h4>
 			<audio controls="controls">
 				<source src="music/Billy_Joel-Piano_Man.mp3" type="audio/mpeg">
 				Your browser does not support the audio tag.
@@ -170,7 +174,7 @@
 		</section>
 
 		<section id="fav_lyrics">
-			<h4><i class="fa fa-book" aria-hidden="true"></i>&nbsp;热门歌词</h4>
+			<h4><span><i class="fa fa-book" aria-hidden="true"></i>热门歌词</span></h4>
 			<ul>
 				<li><a href="#" target="_self" title=""><i class="fa fa-heart" aria-hidden="true"></i>Uptown Girl</a></li>
 				<li><a href="#" target="_self" title=""><i class="fa fa-heart" aria-hidden="true"></i>We Didn't Start the Fire</a></li>
@@ -189,15 +193,16 @@
 				<li><a href="#" target="_self" title=""><i class="fa fa-heart" aria-hidden="true"></i>Miami 2017</a></li>
 				<li><a href="#" target="_self" title=""><i class="fa fa-heart" aria-hidden="true"></i>Scenes From an Italian Restaurant</a></li>
 			</ul>			
-		</section>
-			
+		</section>	
+
 		<section id="recommendation">
-			<h4><span>&#x2710;</span>&nbsp;新书预告</h4>
+			<h4><span><i>&#x2710;</i>&nbsp;&nbsp;新书预告</span></h4>
 			<a href="https://www.amazon.com/Billy-Joel-Americas-Littlefield-Culture/dp/1442242051/ref=sr_1_1?ie=UTF8&qid=1482772526&sr=8-1&keywords=billy+joel+america+piano+man" target="_blank" title="新书链接：America's piano man"><img src="images/billy_joel.jpg" alt="新书预览：America's piano man"></a>
-			<p><a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=billy+joel+america+piano+man" target="_blank" title="其他相关产品">其他&nbsp;...</a></p>			
+			<p class="text-right"><a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=billy+joel+america+piano+man" target="_blank" title="其他相关产品">其他&nbsp;...</a></p>			
 		</section>
+
 		<section id="socialmedia">
-			<h4><span>&#10150;</span>&nbsp;官方网站</h4>
+			<h4><span><i>&#10150;</i>&nbsp;&nbsp;官方网站</span></h4>
 			<p>打开&nbsp;<a href="https://www.billyjoel.com/" target="_blank" title="打开官方网站">BILLY JOEL</a></p>
 			<div class="containier-fluid icons">
                 <div><a href="http://www.facebook.com/billyjoel" title="Facebook" target="_blank">
@@ -209,14 +214,12 @@
                 <div><a href="https://plus.google.com/+billyjoel" title="Googleplus"  target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></div>
                 <div><a href="https://www.instagram.com/billyjoel/" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
             </div>			
-		</section>
-
+		</section>		
 	</aside>
-	</div>
+	</div>	
 </section> <!-- Main body -->
-
-<footer class="container">
-	
+<footer class="container-fluid" id="pagefooter">
+	<p>&copy; 2017 created by Jinmin Lei</p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
