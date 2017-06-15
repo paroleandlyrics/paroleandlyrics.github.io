@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 
 body {background: #fff url(../images/background_index.png) 310px 220px no-repeat; color:#240f1e;
-	font-family: "arial",sans-serif; }
+	font-family: "arial",sans-serif; 
+}
 a, a:hover
  {color:#240f1e; font-weight: bold;}
 /************************************ Ajustement on header image ************************************/
@@ -72,7 +73,7 @@ nav li.active>a {
 
 
 
-main, aside {margin-top: 15px;}
+main, aside {margin-top: 15px;  position: relative; min-height: calc(100vh - 272px) !important;}
 
 /************************************ Ajustement on section Quote ************************************/
 #quote i {font-size: .8rem; color: rgb(255,128,128); }
@@ -118,16 +119,20 @@ main, aside {margin-top: 15px;}
 
 /************************************ Ajustement on section lyric recommended ************************************/
 #pickoutlyric h4 span,
-#album h4 span
+#album h4 span,
+#alllyrics h4 span
 {display: inline-block; border: #240f1e solid 1px;
   border-radius: 8px 8px 0 0; border-bottom: 0;
   width: 140px;
 height: 30px; line-height: 30px; font-weight: bold;}
 #pickoutlyric h4,
-#album h4
+#album h4,
+#alllyrics h4
  {border-bottom: 1px dotted #240f1e;}
 
-#pickoutlyric .fa-star {color:red;}
+#pickoutlyric .fa-star,
+#alllyrics .fa-star
+ {color:red;}
 
 #pickoutlyric article {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 #pickoutlyric article span {display:inline-box; margin-right: 20px; }
@@ -221,3 +226,9 @@ audio {background-color: #240f1e; width: 100%}
 
 
 #pagefooter {text-align: center; background-color:#240f1e; color: #fff; padding: 30px; color: rgb(248,233,210);}
+
+#alllyrics i{color:red; font-weight: bold; display:inline-block;}
+#alllyrics i::after,
+#alllyrics i::before
+{content:"\00a0\00a0\00a0";}
+input[type=submit]{margin:5px 5px 5px 0; padding:8px 12px; }
