@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 
 body {background: #fff url(../images/background_index.png) 310px 220px no-repeat; color:#240f1e;
-	font-family: "arial",sans-serif; 
+	font-family: "arial",sans-serif;
 }
 a, a:hover
  {color:#240f1e; font-weight: bold;}
@@ -73,7 +73,7 @@ nav li.active>a {
 
 
 
-main, aside {margin-top: 15px;  position: relative; min-height: calc(100vh - 272px) !important;}
+main, aside {margin-top: 15px;  min-height: calc(100vh - 272px) !important;}
 
 /************************************ Ajustement on section Quote ************************************/
 #quote i {font-size: .8rem; color: rgb(255,128,128); }
