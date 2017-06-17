@@ -61,7 +61,7 @@ nav ul li{
   text-align: center;
   width: calc(90px + 1vw);
   font-weight: bold;
-/*  margin-bottom: 5px;*/
+ margin-bottom: 5px;
 }
 nav li a {color:#fff !important;}
 nav li a:hover,
@@ -153,6 +153,15 @@ height: 30px; line-height: 30px; font-weight: bold;}
 #album article .row div {text-align: center;}
 
 /*Aside panel*/
+#fav_lyrics blockquote {
+	font-size: 1em;
+}
+
+a.text-mycolor,
+a.text-mycolor:hover {
+    color: #c29804;
+}
+
 #play,
 #fav_lyrics,
 #recommendation,
