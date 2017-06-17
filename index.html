@@ -220,7 +220,13 @@
 <footer class="container-fluid" id="pagefooter">
 	<p>&copy; 2017 created by Jinmin Lei</p>
 </footer>
-
+<script src="js/svg-injector.min.js"></script>
+<script>
+    // Elements to inject
+    var mySVGsToInject = document.querySelectorAll('img.inject-me');
+    // Do the injection
+    SVGInjector(mySVGsToInject);
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
